@@ -1,6 +1,8 @@
 """This file contains util functions that have to do with the pre-processing and post-processing of session midi and excel files,
 for generating groove2groove outputs. They focus on name conventions in the structure xls, saving output files, etc.
-Most of the functions functionality for editing and changing midi files is found in the session_grv2grv_processing_utils.py util file"""
+Most of the functions functionality for editing and changing midi files is found in the session_grv2grv_processing_utils.py util file.
+
+Written by Natan Bibelnik @ MyPart, 2024"""
 
 from typing import Optional, List, Dict, Tuple
 from pathlib import Path

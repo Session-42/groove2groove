@@ -1,8 +1,10 @@
+"""Python wrapper for Groove2Groove module + analysis script.
+
+Written by Natan Bibelnik @ MyPart, August 2024"""
+
 import subprocess
 from enum import Enum
 from typing import Optional
-#TODO Docstrings etc.
-
 
 class Groove2GrooveModelName(str, Enum):
     """Enum that contains the 4 models (and weights) released with groove2groove"""

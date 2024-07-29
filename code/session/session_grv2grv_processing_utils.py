@@ -1,4 +1,7 @@
-"""This file contains util functions for editing MIDI files (MIDI program number mapping, cropping, splitting drums etc.)"""
+"""This file contains util functions for editing MIDI files (MIDI program number mapping, cropping, splitting drums etc.).
+
+Written by Natan Bibelnik @ MyPart, 2024"""
+
 from typing import List, Dict, Tuple, Optional
 import music21 as m21
 
@@ -202,8 +205,8 @@ def preprocess_midi_file(midi_path,
                                           first and last bar are ints indicating the first and last bars for cropping.
     :param auto_map_midi: bool flag for enabling sequential midi program number mapping (used to overcome plug-in problems for midi files without program mapping) 
     :param split_drum: bool flag for splitting the drums to different scores.
-    :param no_drum_part_name_extention: str, if split_drum is True- this is the extention to be added to the structure part name for the split w/o drums
-    :param drum_part_name_extention: str, if split_drum is True- this is the extention to be added to the structure part name for the split containing only drums
+    :param no_drum_part_name_extension: str, if split_drum is True- this is the extension to be added to the structure part name for the split w/o drums
+    :param drum_part_name_extension: str, if split_drum is True- this is the extension to be added to the structure part name for the split containing only drums
     :param default_struct_part_name: str, in case no 'part_struct_first_and_last_bar_dict' was given, this is the default part name (the full midi). 
     :return: tuple of (stream_dict, program_dict, drum_dict, bpm). the first is a dictionary containing the processed music21 streams, the others are mapping dictionaries and bpm.
     """
