@@ -2,12 +2,11 @@
 This file contains a script for creating self-variants of a Session MIDI.
 The input MIDI is assumed to be in session42 format (plug-ins/instruments as midi part names), 
 together with an xls file containing the partition to structure parts. 
-Further information is provided in the README.md file
-"""
+Further information is provided in the README.md file.
+
+Written by Natan Bibelnik @ MyPart, 2024"""
 
 from typing import List, Optional
-import sys
-from pathlib import Path
 import argparse
 from session_grv2grv_full_pipeline import create_blend_per_part
 from groove2groove_wrapper import Groove2GrooveModelName

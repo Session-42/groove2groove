@@ -1,3 +1,6 @@
+"""Script for parsing human annotation of groove2groove results (as done by Jonathan @ MyPart).
+Written by Natan Bibelnik @ MyPart, 2024"""
+
 import pandas as pd
 import numpy as np
 from pathlib import Path

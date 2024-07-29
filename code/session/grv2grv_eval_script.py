@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Written by Natan Bibelnik @ MyPart, 2024"""
+
 import os
 import scipy
 from pathlib import Path

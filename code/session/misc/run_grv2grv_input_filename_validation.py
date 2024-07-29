@@ -2,7 +2,8 @@
 Python Script for running over Session HitCraft - All Files Bank, together with a progress excel (Tamir's).
 Finding mismatches in file names / folders, missing files and wrong Excel Structure Values.
 Output is CSV/Excel with the relevant attributes, which is used later on in the pre_provessing_on_all_files
-"""
+
+Written by Natan Bibelnik @ MyPart, 2024"""
 
 from pathlib import Path
 import pandas as pd

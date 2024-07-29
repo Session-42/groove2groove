@@ -1,4 +1,5 @@
 # This is an example script for running session_grv2grv_self_blend_pipeline
+# Written by Natan Bibelnik @ MyPart, 2024
 
 path_to_midi_file='data/HitCraft_Examples/Black Music Projects/Sub - Genre Afrobeat/57 Afrobeat #1 In F#m/Exports/57 Afrobeat #1 In F#m.midi'
 path_to_structure_xls='data/HitCraft_Examples/Black Music Projects/Sub - Genre Afrobeat/57 Afrobeat #1 In F#m/Exports/57 Afrobeat #1 In F#m St.xlsx'
