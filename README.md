@@ -104,8 +104,6 @@ Additional options for both scripts:
   --python_exe_for_grv2grv_env: Path to the Python executable that has the appropriate environment for running groove2groove. (Default='/home/ubuntu/.conda/envs/groove2groove/bin/python')
 
 
-
-
 ### Additional Notes:
 #### Time Signature: 
 The current groove2groove model supports only time signature of 4/4. It is possible to rewrite 3/4 time signature to 4/4 by using triola-legnth notes, but it is not clear what will be the quality of the output. 
@@ -117,3 +115,6 @@ In principle - the "Style MIDI" drums should be taken into account for preservin
 
 #### MIDI mapping 
 The current implementation support Sequential MIDI mapping to overcome plug-in issues, and run groove2groove correctly. The sequential MIDI program numbers are mapped back at the post-processing stage. Mixing songs with mapping and songs without is currnly not supported.
+
+
+This file was written by Natan Bibelnik @ MyPart, 2024
