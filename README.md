@@ -6,7 +6,8 @@ It assumes Session42 MIDI inputs, where the instrument name is given as a "MIDI 
 #### Code
 The code is divided Between two directories. The original groove2groove code is found in ```code/groove2groove```.
 
-The additional code for hanlding Session42 MIDI files - preprocessing, postprocessing and groove2groove wrappers are found in ```code/session/```.
+The additional code for hanlding Session42 MIDI files - preprocess![image](https://github.com/user-attachments/assets/3c684304-6963-4f61-b0bb-9c68cc7dd4d0)
+ing, postprocessing and groove2groove wrappers are found in ```code/session/```.
 
 In addition, the following two main scripts are found in the same directory: 
 
@@ -46,8 +47,11 @@ Therefore, before running the scripts, the two environments must be build:
 ```conda activate session```
 
 
-In addition - groove2groove model weights must be downloaded first. 
-This can be done using the utility script, where <model_name> must be one of: `v01_drums`, `v01_drums_vel`, `v01`, `v0_vel` :
+In addition - groove2groove model weights must be downloaded first. To download `v01_drums` model weights use:
+
+```code/session/download_groove2groove_model_weights.sh v01_drums```
+
+Additional model weights can be downloaded by replacing <model_name> by one of the followings: `v01_drums`, `v01_drums_vel`, `v01`, `v0_vel` :
 
 ```code/session/download_groove2groove_model_weights.sh <model_name>```
 
