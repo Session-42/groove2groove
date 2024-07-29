@@ -117,4 +117,5 @@ In principle - the "Style MIDI" drums should be taken into account for preservin
 The current implementation support Sequential MIDI mapping to overcome plug-in issues, and run groove2groove correctly. The sequential MIDI program numbers are mapped back at the post-processing stage. Mixing songs with mapping and songs without is currnly not supported.
 
 
+-----------------------------
 This file was written by Natan Bibelnik @ MyPart, 2024
