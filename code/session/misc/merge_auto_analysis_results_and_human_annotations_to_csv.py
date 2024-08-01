@@ -1,4 +1,7 @@
 """Script for unifying Groove2Groove auto analysis results CSV + Human annotations CSV into a single CSV.
+This script should be used after using:
+1. code/session/misc/process_human_annotation_csv.py - for processing the human annotation in google-sheets (after downloaded as csv) 
+2. code/session/misc/collect_auto_analysis_results_to_csv.py - for collecting grv2grv analysis json results
 Written by Natan Bibelnik @ MyPart, 2024"""
 
 import pandas as pd

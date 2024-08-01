@@ -1,4 +1,4 @@
-"""Script for parsing human annotation of groove2groove results (as done by Jonathan @ MyPart).
+"""Script for parsing human annotation of groove2groove outputs (as done by Jonathan @ MyPart in Google-Sheets).
 Written by Natan Bibelnik @ MyPart, 2024"""
 
 import pandas as pd
@@ -13,7 +13,6 @@ for human_annotation_csv in filtered_csv_files:
     try:
         output_csv = human_annotation_csv.stem + '_flat.csv'
         excel_model_dict = {'v01':'None', 'v01_vel':'Velocity', 'v01_drums_vel':'Drums and Velocity', 'v01_drums': 'Drums'}
-
 
         # assuming structure where the model name is within () in the first row of the csv, then in the second row - 4 columns belong to each model name
         df = pd.read_csv(human_annotation_csv, header=0) # read csv
