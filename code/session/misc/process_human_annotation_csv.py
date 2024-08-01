@@ -5,8 +5,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-
-#    human_annotation_csv =  'Human Annotation Groove2Groove Outputs - Verse.csv'
+# download annotation google-sheet as csv, and process them one by one.
 annotation_csv_files = Path('./').glob('Human Annotation Groove2Groove Outputs*.csv')
 filtered_csv_files = [f for f in annotation_csv_files if not f.name.endswith('_flat.csv')]
 
@@ -26,7 +25,7 @@ for human_annotation_csv in filtered_csv_files:
         # set the second row [0] as index and drop it.
         df.columns = df.iloc[0]
         df = df.drop(0)
-        df = df.drop(1)  # row containing temperature, should I drop it?
+        df = df.drop(1)  # row containing temperature
         df = df.reset_index(drop=True)
 
         num_of_info_cols = 4
