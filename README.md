@@ -113,8 +113,17 @@ MIDI mapping of percussion was not handled within this project, therfore for the
 Groove2groove model treats differently pitched instruments (where the midi number signifies pitch) and percussive instruments (where midi number signifies type of instrument). Mapping percussion plug-ins into MIDI numbers is more complicated, since the mapping should involve changing the MIDI Notes numbers. Therefore we currently do not support non-pitched MIDI Mapping.
 In principle - the "Style MIDI" drums should be taken into account for preserving the style. But due to non-pitched midi mapping limiation, and the unexpected result when running groove2groove with un-mapped drums, we decided to use the original drums. Moreover, the length of the Style might be different from the length of the Content + Output MIDIs. Therefore we decided to use the Content drums (in the case of self blend the Content and the Style are identical - so it does not matter).
 
-#### MIDI mapping 
+#### MIDI Mapping: 
 The current implementation support Sequential MIDI mapping to overcome plug-in issues, and run groove2groove correctly. The sequential MIDI program numbers are mapped back at the post-processing stage. Mixing songs with mapping and songs without is currnly not supported.
+
+### MISC Folder:
+In `code/session/misc` there are util scripts for collecting annotations (from the human annotated google-sheet), for collecting the groove2groove analysis metrics from multiple json files, 
+and for matching and analyzing the human vs automatic assesments. 
+The annotation files from our experiments are located in: `data/session_annotation_data` together with the figures.
+
+In addition - in the misc folder there is also a validataion script `code/session/misc/run_grv2grv_input_filename_validation.py`, for validating groove2groove inputs (file-names, structure xls values etc.),
+based on HitCraft Status Excel (a copy of the current stage can be found in `data/HitCraft_Examples/Hitcraft Catalog Upload  - Hitcraft Catalog Upload .csv`)
+
 
 
 -----------------------------
