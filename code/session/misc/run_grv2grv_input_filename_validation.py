@@ -19,8 +19,8 @@ valid_green_col_values = ['Approved'] #  + ['In Proses']
 
 # input/output files and forders
 hit_craft_root_folder = 'phase2\HitCraft - All Files Bank'
-full_data_excel_csv_path = r'phase2\Hitcraft Catalog Upload  - Hitcraft Catalog Upload .csv'
-out_csv_path = r'phase2\valid_phase2_files_all.csv'
+full_data_excel_csv_path = r'data\HitCraft_Examples\Hitcraft Catalog Upload  - Hitcraft Catalog Upload .csv'
+out_csv_path = r'data\valid_hitcraft_files_all.csv'
 
 
 # function to calculate for a given folder path

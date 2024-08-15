@@ -6,8 +6,9 @@ from pathlib import Path
 import json
 
 if __name__ == '__main__': 
-    root_folder = r'phase2\final_self_blend_outputs_w_bpm'
-    out_auto_analysis_csv = 'grv2grv_analysis_self_blend.csv'
+    # root folder should be replaced by the root folder containing all the json files
+    root_folder = r'final_self_blend_outputs_w_bpm'
+    out_auto_analysis_csv = 'data/session_annotation_data/grv2grv_analysis_self_blend.csv'
     data_list = []
 
     for analysis_json in Path(root_folder).glob('**/*.analysis.json'):

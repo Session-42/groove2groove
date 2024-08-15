@@ -62,15 +62,15 @@ if __name__ == '__main__':
      ]
 
     grv2grv_analysis_csv = [
-        'grv2grv_analysis_self_blend.csv',
-        'grv2grv_analysis.csv',
-        'grv2grv_analysis_self_blend_human_mapping.csv', 
+        'data/session_annotation_data/grv2grv_analysis_self_blend.csv',
+        'data/session_annotation_data/grv2grv_analysis.csv',
+        'data/session_annotation_data/grv2grv_analysis_self_blend_human_mapping.csv', 
         ]
 
-    # out_merged_csv = f'grv2grv_human_and_auto_annotations_self_blend.csv'
-    # out_merged_csv = f'grv2grv_human_and_auto_annotations_mapped.csv'
-    # out_merged_csv = f'grv2grv_human_and_auto_annotations_human_mapped_self_blend.csv'
-    out_merged_csv = f'grv2grv_human_and_auto_annotations_all.csv'
+    # out_merged_csv = f'data/session_annotation_data/grv2grv_human_and_auto_annotations_self_blend.csv'
+    # out_merged_csv = f'data/session_annotation_data/grv2grv_human_and_auto_annotations_mapped.csv'
+    # out_merged_csv = f'data/session_annotation_data/grv2grv_human_and_auto_annotations_human_mapped_self_blend.csv'
+    out_merged_csv = f'data/session_annotation_data/grv2grv_human_and_auto_annotations_all.csv'
 
 
     df_merged = get_merged_annotation_df(human_annotation_flat_csv, grv2grv_analysis_csv)
