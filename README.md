@@ -105,6 +105,11 @@ Additional options for both scripts:
 
 
 ### Additional Notes:
+#### Hyperparameters:
+We found that the 'v01_drums' and 'v01_drums_vel' models gave good results (v01_drums got got higher similarity scores in the humman assesment of style similarity).
+
+In the "Self Blend" Temperature of 0.4 gave a relatively creative output while still conserving the content, whereas 0.1 was very conservative (Any value between 0 and 1 can be used for even more conservative/creative result.).
+
 #### Time Signature: 
 The current groove2groove model supports only time signature of 4/4. It is possible to rewrite 3/4 time signature to 4/4 by using triola-legnth notes, but it is not clear what will be the quality of the output. 
 
@@ -115,6 +120,13 @@ In principle - the "Style MIDI" drums should be taken into account for preservin
 
 #### MIDI Mapping: 
 The current implementation support Sequential MIDI mapping to overcome plug-in issues, and run groove2groove correctly. The sequential MIDI program numbers are mapped back at the post-processing stage. Mixing songs with mapping and songs without is currnly not supported.
+
+#### Whole Song Variation limiations:
+The current implementation is per-part. In order to get a full song the parts should be concatenated together. 
+
+Also - The Self variation of Verse2 with Verse2 may give very different output than Verse1 with Verse1. For more coherent result it might be possible to blend all Verses with Verse1 or with the variented Verse1 at low temperature. 
+This blending of different parts is unsuported bat require small modifications (with the 'copying drums' limitation owing to possible different length).
+
 
 ### MISC Folder:
 In `code/session/misc` there are util scripts for collecting annotations (from the human annotated google-sheet), for collecting the groove2groove analysis metrics from multiple json files, 
