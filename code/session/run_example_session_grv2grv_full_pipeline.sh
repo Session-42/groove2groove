@@ -6,7 +6,7 @@ path_to_content_structure_xls='data/HitCraft_Examples/Black Music Projects/Sub -
 path_to_style_midi_file='data/HitCraft_Examples/Black Music Projects/Sub - Genre Reggae/18 Reggae 2 In Bm/Exports/18 Reggae 2 In Bm.midi'
 path_to_style_structure_xls='data/HitCraft_Examples/Black Music Projects/Sub - Genre Reggae/18 Reggae 2 In Bm/Exports/18 Reggae 2 In Bm St.xlsx'
 output_folder='/home/ubuntu/out_folder_test_full_pipeline'
-python_exe_for_grv2grv_env='/home/ubuntu/.conda/envs/groove2groove5/bin/python'
+python_exe_for_grv2grv_env='/home/ubuntu/.conda/envs/groove2groove/bin/python'
 
 echo "running example: code/session/session_grv2grv_full_pipeline.py"
 

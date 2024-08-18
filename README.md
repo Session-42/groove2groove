@@ -41,6 +41,8 @@ Therefore, before running the scripts, the two environments must be build:
 
 ```conda env create -f groove2groove_environment.yml```
 
+```pip install ./code[nogpu]```  
+
 ```conda env create -f session_environment.yml```
 
 ```conda activate session```

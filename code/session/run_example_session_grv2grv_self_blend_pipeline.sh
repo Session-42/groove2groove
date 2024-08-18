@@ -9,4 +9,8 @@ python_exe_for_grv2grv_env='/home/ubuntu/.conda/envs/groove2groove/bin/python'
 echo "running example: code/session/session_grv2grv_self_blend_pipeline.py"
 
 mkdir -p "$output_folder" 
-python code/session/session_grv2grv_self_blend_pipeline.py "$path_to_midi_file" "$path_to_structure_xls" "$output_folder" --required_parts Verse Chorus --auto_map_midi True --groove2groove_temperature 0.4 --groove2groove_model v01_drums --replace_if_file_exist True --groove2groove_seed 33 --verbose True --python_exe_for_grv2grv_env "$python_exe_for_grv2grv_env"
+python code/session/session_grv2grv_self_blend_pipeline.py "$path_to_midi_file" "$path_to_structure_xls" "$output_folder" \
+--required_parts Verse Chorus --auto_map_midi True \
+--groove2groove_temperature 0.4 --groove2groove_model v01_drums --groove2groove_seed 33  \
+--replace_if_file_exist True --verbose True \
+--python_exe_for_grv2grv_env "$python_exe_for_grv2grv_env"

@@ -3,7 +3,8 @@ This file contains a script for blending two Session MIDIs per-part.
 The input MIDIs are assumed to be in session42 format (plug-ins/instruments as midi part names), 
 together with xls files containing the partition to structure parts. 
 Further information is provided in the README.md file
-"""
+
+Written by Natan Bibelnik @ MyPart, 2024"""
 
 from typing import Dict, Tuple, List, Optional
 import sys
