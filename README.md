@@ -37,7 +37,7 @@ While groove2groove original model requires python <=3.6 to support deprecated t
 
 The main script should be used from the new python env, while providing the executable to the python3.6 with groove2groove dependencies as a parameter (groove2groove call is done via sub-process with this executable). 
 
-Therefore, before running the scripts, the two environments must be built (and the `./code` module should be installed with the [gpu] or [nogpu] flag):
+Therefore, before running the scripts, the two environments must be built (and the groove2groove module in ./code should be installed with the [gpu] or [nogpu] flag):
 
 ```conda env create -f groove2groove_environment.yml```
 
