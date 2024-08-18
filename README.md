@@ -35,9 +35,9 @@ Al the temporary files are saved under a `/temp` subfolder of the specified outp
 ### Creating environment and downloading weights:
 While groove2groove original model requires python <=3.6 to support deprecated tensorflow, Music21 package requires a newer version. Therefore two python environments must be defined.
 
-The main script should be used from the new python env, while providing the executable to the python3.6 with groove2groove dependencies as a parameter (groove2groove call is done via sub-process with this executable).
+The main script should be used from the new python env, while providing the executable to the python3.6 with groove2groove dependencies as a parameter (groove2groove call is done via sub-process with this executable). 
 
-Therefore, before running the scripts, the two environments must be build:
+Therefore, before running the scripts, the two environments must be built (and the `./code` module should be installed with the [gpu] or [nogpu] flag):
 
 ```conda env create -f groove2groove_environment.yml```
 
